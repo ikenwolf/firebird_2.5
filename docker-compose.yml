@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  firebird:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./fb:/fb
+    ports:
+      - 3050:3050
